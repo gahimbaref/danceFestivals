@@ -1,9 +1,5 @@
 /*------------style.css--------*/
 
-* {
-	margin: 0;
-	padding: 0;
-}
 
 body {
 	background-color: #01171b;
@@ -20,3 +16,38 @@ svg path:hover{
 	transition: .6s;
 	cursor: pointer;
 	}
+#navbar {
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	padding: 10px;
+}
+
+/* Styling for the footer */
+#footer {
+		background-color: #333;
+	color: #fff;
+	text-align: center;
+	padding: 10px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	}
+
+circle {
+	 transition: fill 0.3s ease, r 0.3s ease, transform 0.1s ease; /* Add transition for radius and transform */
+	transform-origin: center; /* Set the transform origin to the center of the circle */
+}
+
+/* Style the country labels */
+.label {
+	display: none;
+	position: absolute;
+	background: rgba(255, 255, 255, 0.8);
+	padding: 5px;
+	border: 1px solid #000;
+	border-radius: 3px;
+}
+path.country {
+	pointer-events: none;
+}
