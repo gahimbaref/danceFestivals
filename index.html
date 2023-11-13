@@ -1,70 +1,83 @@
 <!DOCTYPE html>
-
+<?xml version="1.0"?>
 <html lang="en">
-
 	<head >
 		<meta charset="UTF-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
 		<title>Dance Fest Map</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 		<link rel="stylesheet"
 			  href="style.css"
 			  type="text/css"/>
-
 	</head>
 
-    <nav class="nav-container navbar navbar-expand-lg">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav mr-auto nav-links">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Resources</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-          </ul>
-          <span class="navbar-text">
-            <a class="nav-item nav-link" href="#">Interactive Dance Festivals Map</a>
-        </span>
-          
-        </div>
-      </nav>
-    <header>
-        <div class="nav-container">
-                <h1 class="logo">Dance Festivals and Cosmopolitanism</h1>
-            </div>
 
+<body>
+ <br>
+ <br>
+ <br>
+    <header>
         <div class="container">
+            <h1 >Dance Festivals and Cosmopolitanism</h1>
+            <br>
+    
             <img src="Karmiel-Dance-Festival.webp" alt="Italian Trulli">
             <center>Image Source: https://www.touristisrael.com/karmiel-dance-festival-in-carmiel-israel/26453/</center>
             <br>
-            <p>
-                Dance festivals, as vibrant and dynamic celebrations of human movement and rhythm, serve as microcosms of cosmopolitanism in the world of entertainment and culture. These gatherings bring together individuals from diverse backgrounds, transcending geographical, cultural, and social boundaries. At dance festivals, the universal language of dance takes center stage, fostering an inclusive atmosphere where people from all corners of the globe come to groove to the same beat. These events reflect the essence of cosmopolitanism, as they promote a global exchange of ideas, styles, and experiences, uniting people in the shared passion for dance while celebrating the rich tapestry of our interconnected world.
-           
-            </p>
+                <p>
+                    Dance festivals, as vibrant and dynamic celebrations of human movement and rhythm, serve as microcosms of cosmopolitanism in the world of entertainment and culture. These gatherings bring together individuals from diverse backgrounds, transcending geographical, cultural, and social boundaries. At dance festivals, the universal language of dance takes center stage, fostering an inclusive atmosphere where people from all corners of the globe come to groove to the same beat. These events reflect the essence of cosmopolitanism, as they promote a global exchange of ideas, styles, and experiences, uniting people in the shared passion for dance while celebrating the rich tapestry of our interconnected world.
+                </p>
             <div>
-                <p>Explore dance festivals around the world and learn about their history and their relation to cosmopolitanism</p>
+                <p> **Use the map below to explore dance festivals around the world through a cosmopolitan lens**</p>
             </div>
-            
-
         </div>
-
-    </html>
-    
-    <br>
-    <br>
-    <br>
-
     </header>
+    
 
-    <body>
+    <br>
+    <br>
+    <br>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: #1f0606;">
+        <a class="navbar-brand nav-link" href="worldv1.html"> DanceFestMap </a>
 
-<?xml version="1.0"?>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+            <li class="nav-link inactive">
+                &nbsp
+            </li>
+
+        
+            </ul>
+            <ul class="navbar-nav navbar-right">
+        
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Welcome!<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-link inactive">
+                |
+            </li>
+
+            <li class="nav-item active">
+                <a class="nav-link" href="artistStatement.html">Artist Statement <span class="sr-only"></span></a>
+            </li>
+            
+            </ul>
+        
+        </div>
+        </nav>
+        
+          
+          
+       
+          
+
 <!--
 *************Map created by Simplemaps.com********************		
 *************Attribution is highly appreciated!***************
@@ -1069,60 +1082,62 @@ THE SOFTWARE.
  </circle>
  <circle cx="1798.2" cy="719.3" id="2" fill="red">
  </circle>
-    <circle id="dot1" cx="1000" cy="120" r="10" fill="red" />
-    <circle id="dot2" cx="1700" cy="650" r="10" fill="blue" />  
+
+ <circle  id="greece" cx="1100" cy="250" r="7" fill="red" data-toggle="tooltip"  data-html="true" data-placement="right" title="<b> Greece: Dance Days Chania Festival </b>" />
+ <circle id="dot2" cx="1700" cy="650" r="10" fill="blue" />  
 
 </svg>
+  
+
+<script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    });
+    </script>
     
+    
+
 </div>
 
 
-<!-- Country names and labels -->
-<div id="countryLabels">
-    <div id="label1" class="label">Country 1</div>
-    <div id="label2" class="label">Country 2</div>
-</div>
 <script>
     // Add event listeners for clickable dots
-    const dot1 = document.getElementById("dot1");
+    const greece = document.getElementById("greece");
     const dot2 = document.getElementById("dot2");
-    const label1 = document.getElementById("label1");
-    const label2 = document.getElementById("label2");
-    dot1.addEventListener("click", () => {
-        window.location.href = "australia.html";
+
+    greece.addEventListener("click", () => {
+        window.location.href = "greece.html";
     });
+    greece.addEventListener("mouseenter", () => {
+        greece.setAttribute("fill", "red"); // Change dot color on hover
+		greece.setAttribute("r", "15"); // Increase dot radius on hover
+     
+    });
+
+    greece.addEventListener("mouseleave", () => {
+        greece.setAttribute("fill", "red"); // Restore original dot color
+		greece.setAttribute("r", "8"); // Restore original dot radius
+
+    });
+
+
 
     dot2.addEventListener("click", () => {
         window.location.href = "https://example.com/country2";
     });
-    dot1.addEventListener("mouseenter", () => {
-        dot1.setAttribute("fill", "red"); // Change dot color on hover
-		dot1.setAttribute("r", "15"); // Increase dot radius on hover
-        label1.style.display = "block"; // Show the country name label
-        label1.style.left = `${dot1.cx.baseVal.value - (parseInt(getComputedStyle(label1).width) / 2)}px`; // Position label at the same x-coordinate as dot
-    label1.style.top = `${dot1.cy.baseVal.value - (parseInt(getComputedStyle(label1).height) / 2)}px`; // Position label at the same y-coordinate as dot
-    });
 
-    dot1.addEventListener("mouseleave", () => {
-        dot1.setAttribute("fill", "red"); // Restore original dot color
-		dot1.setAttribute("r", "10"); // Restore original dot radius
-
-        label1.style.display = "none"; // Hide the country name label
-    });
 
     dot2.addEventListener("mouseenter", () => {
         dot2.setAttribute("fill", "green");
 		dot2.setAttribute("r", "15"); // Increase dot radius on hover
 
-        label2.style.display = "block";
-        label2.style.left = `${dot2.cx.baseVal.value -1}px`;
-        label2.style.top = `${dot2.cy.baseVal.value }px`;
+   
     });
 
     dot2.addEventListener("mouseleave", () => {
         dot2.setAttribute("fill", "red");
 		dot2.setAttribute("r", "10"); // Restore original dot radius
-        label2.style.display = "none";
+   
     });
 </script>
 

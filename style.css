@@ -70,7 +70,7 @@ h1 {
 	margin: 0;
 }
 .container {
-	max-width: 1200px;
+	max-width: 1000px;
 	margin: 0px auto;
 	background-color: #240808;
 	padding: 40px;
@@ -78,7 +78,7 @@ h1 {
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 img {
-	max-width: 80%;
+	max-width: 60%;
 	display: block;
 	margin: 0 auto;
 }
@@ -140,3 +140,11 @@ p {
 .color-label {
 	font-weight: bold;
 }
+
+
+.label {
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px dotted black;
+  }
+  
