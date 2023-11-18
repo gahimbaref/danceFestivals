@@ -25,13 +25,16 @@
             <br>
     
             <img src="Karmiel-Dance-Festival.webp" alt="Italian Trulli">
-            <center>Image Source: https://www.touristisrael.com/karmiel-dance-festival-in-carmiel-israel/26453/</center>
+            <center><a href="https://www.touristisrael.com/karmiel-dance-festival-in-carmiel-israel/26453/" target="_blank">Image Source</a></center>
             <br>
                 <p>
-                    Dance festivals, as vibrant and dynamic celebrations of human movement and rhythm, serve as microcosms of cosmopolitanism in the world of entertainment and culture. These gatherings bring together individuals from diverse backgrounds, transcending geographical, cultural, and social boundaries. At dance festivals, the universal language of dance takes center stage, fostering an inclusive atmosphere where people from all corners of the globe come to groove to the same beat. These events reflect the essence of cosmopolitanism, as they promote a global exchange of ideas, styles, and experiences, uniting people in the shared passion for dance while celebrating the rich tapestry of our interconnected world.
-                </p>
+
+                    Dance festivals, vibrant celebrations of human movement and rhythm, often serve as vibrant microcosms embodying cosmopolitan ideals in entertainment and culture. These events attract individuals from diverse backgrounds, transcending geographical, cultural, and social boundaries. At these festivals, the universal language of dance fosters an inclusive atmosphere, bringing people together from across the globe to groove to the same beat. Such occasions epitomize cosmopolitanism, promoting a global exchange of ideas, styles, and experiences while celebrating our interconnected world's rich diversity.
+                    <br>
+                    <br>
+                    However, it's important to note that while dance festivals are a significant way to unite cultures and cultivate cosmopolitan values, there are instances where national dance festivals, focusing on a single country's cultural heritage, may better foster cosmopolitanism compared to international ones. In international dance festivals, where various cultures converge, attempts to integrate diverse traditions occasionally highlight challenges inherent in cosmopolitan ideals. When different cultures attempt to fit into a singular dance festival, they sometimes reveal underlying complexities and hurdles that hinder seamless integration and understanding among cultures. These challenges underscore how cultural differences, when juxtaposed without careful consideration, can accentuate the obstacles to achieving true cosmopolitan unity.                </p>
             <div>
-                <p> **Use the map below to explore dance festivals around the world through a cosmopolitan lens**</p>
+                <p style="color: #5208ff;"> Utilize the map provided to delve into the landscape of both national and international dance festivals worldwide, examining them through the lens of cosmopolitanism. Investigate how these festivals showcase cultural diversity and promote global exchange while considering how they navigate the challenges of integrating various cultural traditions within a shared platform. Analyze the ways in which these events celebrate cultural richness, foster cross-cultural understanding, and highlight the complexities of uniting diverse cultural expressions under the umbrella of cosmopolitan ideals.</p>
             </div>
         </div>
     </header>
@@ -113,23 +116,12 @@ THE SOFTWARE.
     <div class="color-key">
         <div class="color-item">
             <div class="color-swatch" style="background-color: #FF0000;"></div>
-            <div class="color-label">Historical Dance Festivals</div>
+            <div class="color-label">National Dance Festivals</div>
         </div>
-        <div class="color-item">
-            <div class="color-swatch" style="background-color: #00FF00;"></div>
-            <div class="color-label">Modern Dance Festivals</div>
-        </div>
+
         <div class="color-item">
             <div class="color-swatch" style="background-color: #0000FF;"></div>
             <div class="color-label">International Dance Festivals</div>
-        </div>
-        <div class="color-item">
-            <div class="color-swatch" style="background-color: #FFFF00;"></div>
-            <div class="color-label">Political</div>
-        </div>
-        <div class="color-item">
-            <div class="color-swatch" style="background-color: #FFA500;"></div>
-            <div class="color-label">Environmental</div>
         </div>
     </div>
 
@@ -201,7 +193,7 @@ THE SOFTWARE.
  <path class="Canada" d="M 711.5 177.8 706.5 183.2 710.4 181.1 713.3 182.5 710.9 184.6 714.7 186.3 717.5 184.8 721.8 186.7 719 191.3 722.8 190.2 722.5 193.5 723 197.4 719.4 203 717 203.2 714.1 202 716.6 196.9 715.4 196.1 708.1 201.5 705.1 201.3 709.5 198.3 705.1 196.8 699.6 197.2 690 197 689.8 195.2 693.6 192.9 691.9 191.3 697.3 187.5 705.5 177.6 709.7 174.1 714.7 172 716.8 172.2 715.3 173.9 711.5 177.8 Z">
  </path>
  <path class="Canada" d="M 351.5 156.4 353 157.2 358 156.7 350.8 163.6 351.1 168.6 349.2 168.6 348.5 165.8 349 162.9 348.2 161 349.5 158.3 351.5 156.4 Z">
- </path>
+ </path>            
  <path class="Canada" d="M 634.9 108.9 631.3 111.9 629.6 111.4 629.5 109.7 629.9 109.3 632.7 107.6 634.4 107.7 634.9 108.9 Z">
  </path>
  <path class="Canada" d="M 625.2 105.7 618 108.9 615 108.7 615 107.2 620 104.5 626 104.6 625.2 105.7 Z">
@@ -1084,7 +1076,7 @@ THE SOFTWARE.
  </circle>
 
  <circle  id="greece" cx="1100" cy="250" r="7" fill="red" data-toggle="tooltip"  data-html="true" data-placement="right" title="<b> Greece: Dance Days Chania Festival </b>" />
- <circle id="dot2" cx="1700" cy="650" r="10" fill="blue" />  
+ <circle id="germany" cx="1035" cy="180" r="10" fill="blue" data-toggle="tooltip"  data-html="true" data-placement="right" title="<b> Germany: Berlin International Dance Festival </b>"/>  
 
 </svg>
   
@@ -1103,7 +1095,7 @@ THE SOFTWARE.
 <script>
     // Add event listeners for clickable dots
     const greece = document.getElementById("greece");
-    const dot2 = document.getElementById("dot2");
+    const germany = document.getElementById("germany");
 
     greece.addEventListener("click", () => {
         window.location.href = "greece.html";
@@ -1122,21 +1114,19 @@ THE SOFTWARE.
 
 
 
-    dot2.addEventListener("click", () => {
-        window.location.href = "https://example.com/country2";
+    germany.addEventListener("click", () => {
+        window.location.href = "germany.html";
     });
 
 
-    dot2.addEventListener("mouseenter", () => {
-        dot2.setAttribute("fill", "green");
-		dot2.setAttribute("r", "15"); // Increase dot radius on hover
+    germany.addEventListener("mouseenter", () => {
+		germany.setAttribute("r", "15"); // Increase dot radius on hover
 
    
     });
 
-    dot2.addEventListener("mouseleave", () => {
-        dot2.setAttribute("fill", "red");
-		dot2.setAttribute("r", "10"); // Restore original dot radius
+    germany.addEventListener("mouseleave", () => {
+		germany.setAttribute("r", "10"); // Restore original dot radius
    
     });
 </script>
