@@ -128,6 +128,8 @@ THE SOFTWARE.
             <div class="color-swatch" style="background-color: #00ff51;"></div>
             <div class="color-label">National Festivals</div>
         </div>
+
+
     </div>
 
 <svg baseprofile="tiny"  stroke-linecap="round" stroke-linejoin="round"  version="1.2" viewbox="0 0 2000 857"  xmlns="http://www.w3.org/2000/svg">
@@ -1082,12 +1084,15 @@ THE SOFTWARE.
 
  <circle  id="greece" cx="1100" cy="250" r="7" fill="green" data-toggle="tooltip"  data-html="true" data-placement="right" title="<b> Greece: Dance Days Chania Festival </b>" />
  <circle id="germany" cx="1035" cy="180" r="10" fill="red" data-toggle="tooltip"  data-html="true" data-placement="right" title="<b> Germany: Berlin International Dance Festival </b>"/>  
+ <circle id="canada" cx="500" cy="130" r="10" fill="blue" data-toggle="tooltip"  data-html="true" data-placement="right" title="<b> Canada: International Dance Festival (1993) </b>"/>  
+ <circle id="england" cx="970" cy="145" r="10" fill="blue" data-toggle="tooltip"  data-html="true" data-placement="right" title="<b> England: Africa and the Commonwealth festival </b>"/>  
+ <circle id="africa" cx="1100" cy="400" r="10" fill="red" data-toggle="tooltip"  data-html="true" data-placement="right" title="<b> Africa: Danse l'Afrique danse Festival </b>"/>  
 
-<circle id="canada" cx="500" cy="130" r="10" fill="blue" data-toggle="tooltip"  data-html="true" data-placement="right" title="<b> Canada: International Dance Festival (1993) </b>"/>  
-<circle id="england" cx="970" cy="145" r="10" fill="blue" data-toggle="tooltip"  data-html="true" data-placement="right" title="<b> England: Africa and the Commonwealth festival </b>"/>  
 
-<circle id="africa" cx="1100" cy="400" r="10" fill="red" data-toggle="tooltip"  data-html="true" data-placement="right" title="<b> Africa: Danse l'Afrique danse Festival </b>"/>  
-<!-- <circle id="england" cx="1035" cy="180" r="10" fill="blue" data-toggle="tooltip"  data-html="true" data-placement="right" title="<b> Germany: Berlin International Dance Festival </b>"/>   -->
+<circle id="japan" cx="1720" cy="260" r="10" fill="green" data-toggle="tooltip"  data-html="true" data-placement="right" title="<b> Japan: Awa Odori Festival</b>"/>  
+<circle id="india" cx="1430" cy="380" r="10" fill="green" data-toggle="tooltip"  data-html="true" data-placement="right" title="<b> India: Khajuraho Dance Festival</b>"/>  
+<circle id="worldCulture" cx="1430" cy="340" r="10" fill="yellow" data-toggle="tooltip"  data-html="true" data-placement="right" title="<b> World Culture Festival</b>"/>  
+
 
 
 </svg>
@@ -1111,6 +1116,10 @@ THE SOFTWARE.
     const canada = document.getElementById("canada");
     const africa = document.getElementById("africa");
     const england = document.getElementById("england");
+    const japan = document.getElementById("japan");
+    const india = document.getElementById("india");
+    const worldCulture = document.getElementById("worldCulture");
+
 
 
 
@@ -1194,11 +1203,55 @@ THE SOFTWARE.
     });
 
 
+     //japan
+    japan.addEventListener("click", () => {
+        window.location.href = "japan.html";
+    });
+
+    japan.addEventListener("mouseenter", () => {
+		japan.setAttribute("r", "15"); // Increase dot radius on hover
+   
+    });
+
+    japan.addEventListener("mouseleave", () => {
+		japan.setAttribute("r", "10"); // Restore original dot radius
+   
+    });
+
+         //india
+         india.addEventListener("click", () => {
+        window.location.href = "india.html";
+    });
+
+    india.addEventListener("mouseenter", () => {
+		india.setAttribute("r", "15"); // Increase dot radius on hover
+   
+    });
+
+    india.addEventListener("mouseleave", () => {
+		india.setAttribute("r", "10"); // Restore original dot radius
+   
+    });
+
+             //world culture
+             worldCulture.addEventListener("click", () => {
+        window.location.href = "worldCulture.html";
+    });
+
+    worldCulture.addEventListener("mouseenter", () => {
+		worldCulture.setAttribute("r", "15"); // Increase dot radius on hover
+   
+    });
+
+    worldCulture.addEventListener("mouseleave", () => {
+		worldCulture.setAttribute("r", "10"); // Restore original dot radius
+   
+    });
+
 </script>
 <h1>Conclusion</h1>
 <p>
-    Festivals with the most issues are ones that either happening outside their country, or international festivals that involves the coming together of different nations. Ones that are local or national in their own countries face less issues as there are less likely to be cultural/political differences.
-</p>
+    Without a doubt, dance festivals promote cosmopolitanism through cultural exchange but at their core, they also reveal the fundamental challenges to achieving the highest level of cosmopolitanism.</p>
 
     <!-- Footer -->
     <footer class="text-center text-lg-start text-muted">
@@ -1216,7 +1269,5 @@ THE SOFTWARE.
         </div>
 
     </footer>
->
-
 	</body>
 </html>
