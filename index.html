@@ -1092,6 +1092,7 @@ THE SOFTWARE.
  <circle id="canada" cx="500" cy="130" r="10" fill="blue" data-toggle="tooltip"  data-html="true" data-placement="right" title="<b> Canada: International Dance Festival (1993) </b>"/>  
  <circle id="england" cx="970" cy="145" r="10" fill="blue" data-toggle="tooltip"  data-html="true" data-placement="right" title="<b> England: Africa and the Commonwealth festival </b>"/>  
  <circle id="africa" cx="1100" cy="400" r="10" fill="red" data-toggle="tooltip"  data-html="true" data-placement="right" title="<b> Africa: Danse l'Afrique danse Festival </b>"/>  
+ <circle id="london" cx="973" cy="170" r="10" fill="blue" data-toggle="tooltip"  data-html="true" data-placement="right" title="<b> London: European Folk Dance Festival 1935 </b>"/>  
 
 
 <circle id="japan" cx="1720" cy="260" r="10" fill="green" data-toggle="tooltip"  data-html="true" data-placement="right" title="<b> Japan: Awa Odori Festival</b>"/>  
@@ -1124,6 +1125,8 @@ THE SOFTWARE.
     const japan = document.getElementById("japan");
     const india = document.getElementById("india");
     const worldCulture = document.getElementById("worldCulture");
+    const london = document.getElementById("london");
+
 
 
 
@@ -1253,6 +1256,22 @@ THE SOFTWARE.
    
     });
 
+                 //london
+                 london.addEventListener("click", () => {
+        window.location.href = "london.html";
+    });
+
+    london.addEventListener("mouseenter", () => {
+		london.setAttribute("r", "15"); // Increase dot radius on hover
+   
+    });
+
+    london.addEventListener("mouseleave", () => {
+		london.setAttribute("r", "10"); // Restore original dot radius
+   
+    });
+
+
 </script>
 <h1></h1>
 <p>
@@ -1268,58 +1287,61 @@ THE SOFTWARE.
               <h2 style="text-align: center;">WORKS CITED</h2>
         </section>
         <div class="text-left p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-          1. Chalcraft, Jasper, Gerard Delanty, and Monica Sassatelli. "Varieties of cosmopolitanism in art festivals." The festivalization of culture. Routledge, 2016. 109-130.
+          1. Howes, Frank. “The International (European) Folk Dance Festival.” Journal of the English Folk Dance and Song Society, vol. 2, 1935, pp. 1–16. JSTOR, http://www.jstor.org/stable/4521057. Accessed 12 Oct. 2023.
           <br>
           <br>
-          2. Desmond, Jane C. “Embodying Difference: Issues in Dance and Cultural Studies.” Cultural Critique, no. 26, 1993, pp. 33–63. JSTOR, https://www.jstor.org/stable/1354455
+          2. Chalcraft, Jasper, Gerard Delanty, and Monica Sassatelli. "Varieties of cosmopolitanism in art festivals." The festivalization of culture. Routledge, 2016. 109-130.
           <br>
           <br>
-          3. Despres Altaïr. “The Emergence of Contemporary Dance in Africa. a History of Danse L’Afrique Danse! Biennale.” Journal of African Cultural Studies, vol. 31, no. 3, 2019, pp. 334–351., https://doi.org/10.1080/13696815.2016.1268951
+          3. Desmond, Jane C. “Embodying Difference: Issues in Dance and Cultural Studies.” Cultural Critique, no. 26, 1993, pp. 33–63. JSTOR, https://www.jstor.org/stable/1354455
           <br>
           <br>
-
-          4. Dr. Artur Michel (1936) International Dance Festival, Berlin 1936, The Journal of Health and Physical Education, 7:9, 552-595, DOI: 10.1080/23267240.1936.10628718
-          <br>
-          <br>
-
-          5. Giurchescu, Anca. “The Power of Dance and Its Social and Political Uses.” Yearbook for Traditional Music, vol. 33, 2001, pp. 109–21. JSTOR, https://www.jstor.org/stable/1519635
+          4. Despres Altaïr. “The Emergence of Contemporary Dance in Africa. a History of Danse L’Afrique Danse! Biennale.” Journal of African Cultural Studies, vol. 31, no. 3, 2019, pp. 334–351., https://doi.org/10.1080/13696815.2016.1268951
           <br>
           <br>
 
-          6. Gupta, Deepti. “New Directions in Indian Dance: International Dance Festival and Conference.” Dance Research Journal, vol. 25, no. 2, 1993, pp. 56–58. JSTOR, http://www.jstor.org/stable/1478566. Accessed 29 Oct. 2023.
+          5. Dr. Artur Michel (1936) International Dance Festival, Berlin 1936, The Journal of Health and Physical Education, 7:9, 552-595, DOI: 10.1080/23267240.1936.10628718
           <br>
           <br>
 
-          7. Hanley, Elizabeth A. “The Role of Dance in the 1936 Berlin Olympic Games: Why Competition Became Festival and Art Became Political.” Contentdm, Oct. 2004, https://digital.la84.org/digital/collection/p17103coll10/id/13547/rec/2
+          6. Giurchescu, Anca. “The Power of Dance and Its Social and Political Uses.” Yearbook for Traditional Music, vol. 33, 2001, pp. 109–21. JSTOR, https://www.jstor.org/stable/1519635
+          <br>
+          <br>
+
+          7. Gupta, Deepti. “New Directions in Indian Dance: International Dance Festival and Conference.” Dance Research Journal, vol. 25, no. 2, 1993, pp. 56–58. JSTOR, http://www.jstor.org/stable/1478566. Accessed 29 Oct. 2023.
+          <br>
+          <br>
+
+          8. Hanley, Elizabeth A. “The Role of Dance in the 1936 Berlin Olympic Games: Why Competition Became Festival and Art Became Political.” Contentdm, Oct. 2004, https://digital.la84.org/digital/collection/p17103coll10/id/13547/rec/2
           <br>
           <br>
          
-          8. Howes, Frank. “The International (European) Folk Dance Festival.” Journal of the English Folk Dance and Song Society, vol. 2, 1935, pp. 1–16. JSTOR, http://www.jstor.org/stable/4521057. Accessed 12 Oct. 2023.
+          9. Howes, Frank. “The International (European) Folk Dance Festival.” Journal of the English Folk Dance and Song Society, vol. 2, 1935, pp. 1–16. JSTOR, http://www.jstor.org/stable/4521057. Accessed 12 Oct. 2023.
           <br>
           <br>
          
-          9. Islam, Saqib Ul. “World Culture Festival Brings Thousands Together at Washington’s National Mall.” Voice of America, Voice of America (VOA News), 3 Oct. 2023, www.voanews.com/a/world-culture-festival-brings-hundreds-of-thousands-together-at-washington-s-national-mall-/7295574.html.          
+          10. Islam, Saqib Ul. “World Culture Festival Brings Thousands Together at Washington’s National Mall.” Voice of America, Voice of America (VOA News), 3 Oct. 2023, www.voanews.com/a/world-culture-festival-brings-hundreds-of-thousands-together-at-washington-s-national-mall-/7295574.html.          
           <br>
           <br> 
-          9. Jerome Robbins Dance Division, The New York Public Library. "Artur Michel, "International Dance Tournament - Berlin, 1936"" The New York Public Library Digital Collections. 1936-10. https://digitalcollections.nypl.org/items/d2642e70-4d8e-013b-f184-0242ac110003
+          11. Jerome Robbins Dance Division, The New York Public Library. "Artur Michel, "International Dance Tournament - Berlin, 1936"" The New York Public Library Digital Collections. 1936-10. https://digitalcollections.nypl.org/items/d2642e70-4d8e-013b-f184-0242ac110003
           <br>
           <br>
-          10. Kolokytha, O. (2022). Bottom-up cultural diplomacy in the Greek periphery: The city of Chania and Dance Days Chania festival. City, Culture and Society, 29, 100448. https://doi.org/10.1016/j.ccs.2022.100448
+          12. Kolokytha, O. (2022). Bottom-up cultural diplomacy in the Greek periphery: The city of Chania and Dance Days Chania festival. City, Culture and Society, 29, 100448. https://doi.org/10.1016/j.ccs.2022.100448
           <br>
           <br>
-          12. Lindgren, Allana, et al., editors. Moving Together : Dance and Pluralism in Canada. Wilfrid Laurier University Press, 2021. INSERT-MISSING-DATABASE-NAME, INSERT-MISSING-URL. Accessed 28 Nov. 2023.
+          13. Lindgren, Allana, et al., editors. Moving Together : Dance and Pluralism in Canada. Wilfrid Laurier University Press, 2021. Accessed 28 Nov. 2023.
           <br>
           <br>
-          13. Mackay, Mercedes. “Africa and the Commonwealth Festival.” African Affairs, vol. 65, no. 258, 1966, pp. 27–30. JSTOR, http://www.jstor.org/stable/721086. Accessed 2 Nov. 2023.
+          14. Mackay, Mercedes. “Africa and the Commonwealth Festival.” African Affairs, vol. 65, no. 258, 1966, pp. 27–30. JSTOR, http://www.jstor.org/stable/721086. Accessed 2 Nov. 2023.
           <br>
           <br>
-          14. McPherson, Elizabeth M. The Contributions of Martha Hill to American Dance and Dance Education, 1900-1995. Edwin Mellen Press, 2008. INSERT-MISSING-DATABASE-NAME, INSERT-MISSING-URL. Accessed 28 Nov. 2023.
+          15. McPherson, Elizabeth M. The Contributions of Martha Hill to American Dance and Dance Education, 1900-1995. Edwin Mellen Press, 2008. Accessed 17 Nov. 2023.
           <br>
           <br>
-          15. Shay, Anthony. Choreographing Identities : Folk Dance, Ethnicity and Festival in the United States and Canada. McFarland, 2006.
+          16. Shay, Anthony. Choreographing Identities : Folk Dance, Ethnicity and Festival in the United States and Canada. McFarland, 2006.
           <br>
           <br>
-          16. Shapiro, Sherry B. Dance in a World of Change: Reflections on Globalization and Cultural Difference. Human Kinetics, 2008.
+          17. Shapiro, Sherry B. Dance in a World of Change: Reflections on Globalization and Cultural Difference. Human Kinetics, 2008.
           <br>
           <br>             
           
